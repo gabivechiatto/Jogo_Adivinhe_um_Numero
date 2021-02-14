@@ -1,0 +1,123 @@
+html{
+    background-color: rgb(39, 38, 38);
+    display: inline-block;    
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+body{
+    background-color:rgba(250, 217, 111, 0.877);
+    display: inline-block;    
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    border: 2pt solid black;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px 20px 20px 20px;
+
+    animation-name: slidein;
+    animation-duration: 2s;
+    
+}
+
+h1{
+    font-family: 'Ranchers', cursive;
+    font-size: 40pt;
+
+    animation-name: fade;
+    animation-duration: 4s;
+    
+}
+
+p{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 20pt;
+    line-height: 50pt;
+}
+
+.form{
+    display: inline-block;    
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    line-height:40px;
+
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+
+#palpite{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18pt;
+    font-style: bold;
+    
+}
+
+#campoPalpite{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18pt;
+}
+
+.envioPalpite{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 16pt;
+    margin-top: 20px;
+    background-color: blue;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.envioPalpite:hover{
+    background-color:rgb(58, 157, 238);
+   
+}
+
+button{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 16pt;
+    margin-top: 20px;
+    background-color: rgb(255, 81, 0);
+    padding: 10px 10px 10px 10px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:white;
+    color: black;
+}
+
+@keyframes slidein {
+    from {margin-top: 100%;}
+    to {margin-bottom: 20%;}
+}
+
+@keyframes rotation {  
+    0% {transform: rotateY(0deg);} 
+    100% {transform: rotateY(-360deg);}
+}
+
+@keyframes fade {
+    from{opacity: 0;}
+    to{opacity: 2;}
+}
+
+
+
+
+@media (min-width: 700px) {
+    html{
+    font-size: 80%;
+    grid-template-columns: center;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;  
+   
+}        
+    
+}
