@@ -7,7 +7,7 @@
 <p>Link para o site: https://gabimesquita.github.io/Jogo_Adivinhe_um_Numero/</p>
 
 
-<img src="jogonumero.png">
+<img src="adivinhe_um_numero.png">
  
  
 <h2>Como usar?</h2>
