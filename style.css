@@ -1,40 +1,33 @@
 html{
     background-color: rgb(39, 38, 38);
-    display: inline-block;    
-    align-content: center;
-    text-align: center;
-    align-items: center;
+    display: flex;  
+    justify-content: center;      
+    text-align: center;    
 }
 
 body{
-    background-color:rgba(250, 217, 111, 0.877);
+    background-color:rgba(153, 219, 92, 0.877);
     display: inline-block;    
-    align-content: center;
+    align-content: center; 
+    font-family: 'Roboto', sans-serif;   
     text-align: center;
     align-items: center;
     border: 2pt solid black;
     border-radius: 10px;
     margin-top: 50px;
     margin-bottom: 50px;
-    padding: 20px 20px 20px 20px;
-
-    animation-name: slidein;
-    animation-duration: 2s;
-    
-}
-
-h1{
-    font-family: 'Ranchers', cursive;
-    font-size: 40pt;
+    padding: 20px;
 
     animation-name: fade;
     animation-duration: 4s;
-    
 }
 
-p{
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 20pt;
+h1{    
+    font-size: 30pt;    
+}
+
+p{    
+    font-size: 18pt;
     line-height: 50pt;
 }
 
@@ -44,62 +37,41 @@ p{
     text-align: center;
     align-items: center;
     line-height:40px;
-
-    animation-name: rotation;
-    animation-duration: 5s;
-    animation-delay: 2s;
 }
 
-#palpite{
-    font-family: 'PT Sans Narrow', sans-serif;
+#palpite{    
     font-size: 18pt;
     font-style: bold;
     
 }
 
-#campoPalpite{
-    font-family: 'PT Sans Narrow', sans-serif;
+#campoPalpite{    
     font-size: 18pt;
+    width: 10%;
 }
 
-.envioPalpite{
-    font-family: 'PT Sans Narrow', sans-serif;
+.envioPalpite{    
     font-size: 16pt;
     margin-top: 20px;
-    background-color: blue;
-    padding: 10px 10px 10px 10px;
+    margin-left: 15px;
+    border-radius: 5px;
+    background-color: rgba(91, 9, 129, 0.87);
+    padding: 10px;
     color: white;
     cursor: pointer;
 }
 
 .envioPalpite:hover{
-    background-color:rgb(58, 157, 238);
-   
+    background-color:rgb(91, 9, 129);   
 }
 
-button{
-    font-family: 'PT Sans Narrow', sans-serif;
+button{    
     font-size: 16pt;
     margin-top: 20px;
-    background-color: rgb(255, 81, 0);
+    background-color: rgb(226, 109, 55);
     padding: 10px 10px 10px 10px;
     color: white;
     cursor: pointer;
-}
-
-button:hover{
-    background-color:white;
-    color: black;
-}
-
-@keyframes slidein {
-    from {margin-top: 100%;}
-    to {margin-bottom: 20%;}
-}
-
-@keyframes rotation {  
-    0% {transform: rotateY(0deg);} 
-    100% {transform: rotateY(-360deg);}
 }
 
 @keyframes fade {
@@ -107,17 +79,13 @@ button:hover{
     to{opacity: 2;}
 }
 
-
-
-
 @media (min-width: 700px) {
     html{
-    font-size: 80%;
-    grid-template-columns: center;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-left: 0px;  
-   
-}        
+        font-size: 80%;
+        grid-template-columns: center;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-left: 0px; 
+    }        
     
 }
