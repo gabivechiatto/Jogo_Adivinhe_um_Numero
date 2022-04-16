@@ -4,7 +4,7 @@
 <p>Jogo feito em HTML, CSS e JavaScript, com layout responsivo.</p>
 
 
-<p>Link para o site: https://gabimesquita.github.io/Jogo_Adivinhe_um_Numero/</p>
+<p>Link para o site: https://gabivechiatto.github.io/Jogo_Adivinhe_um_Numero/</p>
 
 
 <img src="adivinhe_um_numero.png">
